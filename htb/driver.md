@@ -52,7 +52,9 @@ Bruteforcing the hash returned the following password:
 
 ``![](<../.gitbook/assets/image (46).png>)``
 
-So we have username and password. Next thing I tried was to enumerate using these credentials without success. Found this link which is almost a writeup, lol: [https://www.jaacostan.com/2021/07/printnightmare-cve-2021-1675-poc.html](https://www.jaacostan.com/2021/07/printnightmare-cve-2021-1675-poc.html). So I conf my smb shared and proceded: 
+So we have username and password. Next thing I tried was to enumerate using these credentials without success. Found this link which is almost a writeup, lol: [https://www.jaacostan.com/2021/07/printnightmare-cve-2021-1675-poc.html](https://www.jaacostan.com/2021/07/printnightmare-cve-2021-1675-poc.html). So I conf my smb shared and proceded. BTW, to found where is your box `smb.conf` you can just run `testparm`: 
+
+![](<../.gitbook/assets/image (58).png>)
 
 Created the payload:
 
@@ -66,3 +68,4 @@ Executed the python script... and sucess!
 
 ![](<../.gitbook/assets/image (57).png>)
 
+rooted.
